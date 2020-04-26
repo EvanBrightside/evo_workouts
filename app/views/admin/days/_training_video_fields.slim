@@ -1,0 +1,10 @@
+.nested-fields
+  .pills_container
+    .f__fieldset
+      = f.input :training_type, input_html: { class: 'select2it' }
+      = f.input :link
+      = f.input :description, as: :rich_text, hint: 'Добавьте описание тренировки'
+
+  .legend_nested
+    = link_to_remove_association t('admin.training_videos.buttons.remove'), f, class: "table-list__remove"
+    .f__legend

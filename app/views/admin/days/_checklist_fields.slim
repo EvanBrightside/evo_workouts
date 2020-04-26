@@ -1,0 +1,8 @@
+.nested-fields
+  .pills_container
+    .f__fieldset
+      = f.input :check_point, as: :rich_text, hint: 'Добавьте чекпоинт'
+
+  .legend_nested
+    = link_to_remove_association t('admin.checklists.buttons.remove'), f, class: "table-list__remove"
+    .f__legend

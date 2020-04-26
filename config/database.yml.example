@@ -1,0 +1,19 @@
+staging:
+  adapter: postgresql
+  database: evo_staging
+
+production:
+  adapter: postgresql
+  database: 
+  username: 
+  password: 
+  host: 
+
+development:
+  adapter: postgresql
+  database: evo_development
+
+test:
+  adapter: postgresql
+  database: evo_test
+  min_messages: warning

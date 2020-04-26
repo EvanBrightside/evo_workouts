@@ -1,0 +1,13 @@
+@import '~adminos/src/scss/adminos_base.scss';
+@import 'actiontext';
+
+.legend_nested  {
+  width: 518px;
+  margin-left: 23%;
+}
+
+.f__legend {
+  &.second_level {
+    padding: 40px 0 4px;
+  }
+}

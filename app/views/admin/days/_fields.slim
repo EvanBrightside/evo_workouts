@@ -1,0 +1,43 @@
+.f__fieldset
+  = f.association :week, input_html: { class: 'select2it' }
+  = f.input :published, wrapper: :check
+  = f.input :number
+
+  .f__legend.legend_nested= 'Тренировки'
+  = f.simple_fields_for :training_videos do |training_video|
+    = render 'training_video_fields', f: training_video
+  .table-list__action.legend_nested
+    = link_to_add_association t('admin.training_videos.buttons.add'), f, :training_videos, class: 'btn btn-secondary'
+    br
+    br
+
+  .f__legend.legend_nested= 'Контент'
+  = f.input :content, as: :rich_text, hint: 'Добавьте контент'
+
+  .f__legend.legend_nested= 'Чек лист'
+  = f.input :checklist_name
+  = f.input :checklist_description, as: :rich_text, hint: 'Добавьте описание чеклиста'
+  = f.simple_fields_for :checklists do |checklist|
+    = render 'checklist_fields', f: checklist
+  .table-list__action.legend_nested
+    = link_to_add_association t('admin.checklists.buttons.add'), f, :checklists, class: 'btn btn-secondary'
+    br
+    br
+
+  .f__legend.legend_nested= 'Замеры'
+  = f.input :measurement_name
+  = f.input :measurement_description, as: :rich_text, hint: 'Добавьте описание замеров'
+  = f.simple_fields_for :measurements do |measurement|
+    = render 'measurement_fields', f: measurement
+  .table-list__action.legend_nested
+    = link_to_add_association t('admin.measurements.buttons.add'), f, :measurements, class: 'btn btn-secondary'
+    br
+    br
+
+  .f__legend.legend_nested= 'Дополнительные ссылки'
+  = f.simple_fields_for :custom_links do |custom_link|
+    = render 'custom_link_fields', f: custom_link
+  .table-list__action.legend_nested
+    = link_to_add_association t('admin.custom_links.buttons.add'), f, :custom_links, class: 'btn btn-secondary'
+    br
+    br

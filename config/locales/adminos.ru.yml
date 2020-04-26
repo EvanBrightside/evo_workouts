@@ -1,0 +1,448 @@
+ru:
+  "true": Да
+  "false": Нет
+
+  enumerize:
+    training_video:
+      training_type:
+        morning: Утренняя тренировка
+        main: Основная тренировка
+        default: Другое видео
+
+  time:
+    formats:
+      admin: '%e %B %Y, %H:%M'
+      announcement: '%e %B %Y'
+      announcement_index_page: '%d.%m.%Y'
+      announcement_slug: '%Y-%m-%d %H:%M'
+      event: '%d %B'
+      event_day: '%d'
+      event_year: '%d %B %Y'
+      event_full: '%d %B %Y, %A'
+      feedback_request: '%e %B %Y %H:%M'
+      feedback_request_admin_email_subject: '%e %B %Y %H:%M'
+      feedback_request_manageable: '%e %B %Y %H:%M'
+      primary: '%d.%m.%Y'
+      short: '%e %B %Y'
+
+  number:
+    currency:
+      format:
+        format: "%n %u"
+        unit: "руб."
+        separator: ","
+        delimiter: " "
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+  errors:
+    messages:
+      invalid: "Имеет неверное значение"
+      empty: "Не может быть пустым"
+      blank: "Не может быть пустым"
+      extension_white_list_error: Неверный формат файла
+
+  attributes:
+    name: Название
+    published: Опубликована
+    nav_name: Название для навигации
+    nav_published: Показывать в навигации
+    slug: URL
+    body: Текст
+    lead: Краткое описание
+    published_at: Дата публикации
+    created_at: Дата
+    meta_title: Title
+    meta_description: Description
+    parent: Родитель
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: "Имеет непредусмотренное значение"
+        exclusion: "Имеет зарезервированное значение"
+        invalid: "Имеет неверное значение"
+        confirmation: "не совпадает с подтверждением"
+        accepted: "Нужно подтвердить"
+        empty: "Не может быть пустым"
+        blank: "Не может быть пустым"
+        too_much_nesting: Итоговая вложенность не может превышать %{count} уровней.
+        too_long:
+          one:   "Слишком большой длины (не может быть больше чем %{count} символ)"
+          few:   "Слишком большой длины (не может быть больше чем %{count} символа)"
+          many:  "Слишком большой длины (не может быть больше чем %{count} символов)"
+          other: "Слишком большой длины (не может быть больше чем %{count} символа)"
+        too_short:
+          one:   "Недостаточной длины (не может быть меньше %{count} символа)"
+          few:   "Недостаточной длины (не может быть меньше %{count} символов)"
+          many:  "Недостаточной длины (не может быть меньше %{count} символов)"
+          other: "Недостаточной длины (не может быть меньше %{count} символа)"
+        wrong_length:
+          one:   "Неверной длины (может быть длиной ровно %{count} символ)"
+          few:   "Неверной длины (может быть длиной ровно %{count} символа)"
+          many:  "Неверной длины (может быть длиной ровно %{count} символов)"
+          other: "Неверной длины (может быть длиной ровно %{count} символа)"
+        taken: "Уже существует"
+        wrong_host: "Email должен принадлежать домену %{host} и должен сущестовать на сервере."
+    models:
+      page: Страница
+      user: Пользователь
+      settings: Настройки
+    attributes:
+      settings:
+        company_name: Название компании
+        contact_email: Контактный e-mail
+        email: E-mail для уведомлений
+        email_header_from: E-mail для FROM
+        index_meta_description: Description
+        index_meta_title: Title
+        per_page: Количество на странице
+        seo_google_analytics: Код Google Analytics
+        seo_yandex_metrika: Код Яндекс.Метрики
+        pr_email: E-mail PR-директора
+        test_emails: E-mail для тестовых писем
+      page:
+        behavior: Тип страницы
+      user:
+        email: E-mail
+        password: Пароль
+        roles: Роли
+        admin: Админ
+      paper_trail/version:
+        item: Объект
+        item_type: Тип
+        event: Событие
+        whodunnit: Юзер
+
+  social:
+    log_in: Войти через социальные сети
+    already_bound: Этот профиль социальной сети уже был привязан
+    bind_success: Вы успешно привязали профиль %{provider} к своей текущей учетной записи
+    login_success: Вы успешно вошли с помощью профиля %{provider}
+    email_bind_success: Профиль %{provider} был привязан к вашему основному аккаунту
+    signup_success: Вы вошли с помощью профиля социальной сети %{provider}
+
+  flash:
+    actions:
+      create:
+        notice: Объект успешно создан
+        alert: Заполните, пожалуйста, форму без ошибок
+      update:
+        notice: Объект успешно обновлен
+        alert: Заполните, пожалуйста, форму без ошибок
+      destroy:
+        notice: Объект успешно удален
+        alert: Объект не может быть удален
+      batch_action:
+        none: Выберите хотя бы один объект
+        notice: Операция завершена успешно
+    access_denied: Доступ запрещен
+
+  simple_form:
+    hints:
+      defaults:
+        slug: Сформируется автоматически, если не задан. Допустимы латинские символы, цифры и дефис.
+    required:
+      text: 'Обязательно'
+
+  views:
+    pagination:
+      first: Первая страница
+      last: Последняя страница
+      next: Следующая страница
+      previous: Предыдущая страница
+      truncate: '...'
+      admin:
+        first: Первая страница
+        last: Последняя страница
+        next: "&raquo;"
+        previous: "&laquo;"
+        truncate: '...'
+
+  labels:
+    application:
+      admin: Панель управления
+    admin:
+      add: Добавить
+      add_child: Добавить подраздел
+      duplication: Дублировать
+      back: Назад
+      cancel: Отменить
+      destroy: Удалить
+      edit: Редактировать
+      apply: Применить
+      save: Сохранить
+      choose: Выбрать
+      login: Логин
+      sign_up: Регистрация
+      show: Просмотр изменений
+      go_to_root: Перейти на сайт
+      info: Справка
+      other: Другое
+      search: Поиск
+      legend:
+        common: Основное
+        seo: SEO
+      logout: Выйти
+      nav_published: В навигации
+      published: Опубликовано
+      locked: Закреплена
+      server_restart: Перезагрузить сервер
+      unpublished: Не опубликовано
+      batch_actions:
+        destroy: Удалить
+        set_nav_published_off: Убрать из навигации
+        set_nav_published_on: Опубликовать в навигации
+        set_published_off: Снять с публикации
+        set_published_on: Опубликовать
+      image:
+        width: Ширина
+        height: Высота
+        cropped: Кадрированное изображение
+
+  confirmations:
+    destroy:
+      one: Вы уверены что хотите удалить?
+      many: Вы уверены что хотите удалить эти объекты?
+
+  layouts:
+    application:
+      header: Главная
+      title: EVO
+    admin:
+      header: &layouts_admin_header Панель управления
+      title: &layouts_admin_title Панель управления
+
+  admin:
+    welcome: Вход в систему администрирования
+    actions:
+      create: Создание
+      update: Обновление
+      destroy: Удаление
+    weeks:
+      actions:
+        index:
+          header: Weeks
+          title: Weeks
+      labels:
+        actions:
+          create: Добавить week
+          create_stay_in_place: Применить
+          edit: Сохранить week
+          edit_stay_in_place: Применить
+          new: Добавить week
+          new_stay_in_place: Применить
+          update: Сохранить week
+          update_stay_in_place: Применить
+    days:
+      actions:
+        index:
+          header: Days
+          title: Days
+      labels:
+        actions:
+          create: Добавить day
+          create_stay_in_place: Применить
+          edit: Сохранить day
+          edit_stay_in_place: Применить
+          new: Добавить day
+          new_stay_in_place: Применить
+          update: Сохранить day
+          update_stay_in_place: Применить
+    training_videos:
+      actions:
+        index:
+          header: Training_videos
+          title: Training_videos
+      labels:
+        actions:
+          create: Добавить training_video
+          create_stay_in_place: Применить
+          edit: Сохранить training_video
+          edit_stay_in_place: Применить
+          new: Добавить training_video
+          new_stay_in_place: Применить
+          update: Сохранить training_video
+          update_stay_in_place: Применить
+      buttons:
+        add: Добавить тренировку
+        remove: Удалить тренировку
+    checklists:
+      actions:
+        index:
+          header: Checklists
+          title: Checklists
+      labels:
+        actions:
+          create: Добавить checklist
+          create_stay_in_place: Применить
+          edit: Сохранить checklist
+          edit_stay_in_place: Применить
+          new: Добавить checklist
+          new_stay_in_place: Применить
+          update: Сохранить checklist
+          update_stay_in_place: Применить
+      buttons:
+        add: Добавить чекпоинт
+        remove: Удалить чекпоинт
+    measurements:
+      actions:
+        index:
+          header: Measurements
+          title: Measurements
+      labels:
+        actions:
+          create: Добавить measurement
+          create_stay_in_place: Применить
+          edit: Сохранить measurement
+          edit_stay_in_place: Применить
+          new: Добавить measurement
+          new_stay_in_place: Применить
+          update: Сохранить measurement
+          update_stay_in_place: Применить
+      buttons:
+        add: Добавить измерение
+        remove: Удалить измерение
+    custom_links:
+      actions:
+        index:
+          header: Custom_links
+          title: Custom_links
+      labels:
+        actions:
+          create: Добавить custom_link
+          create_stay_in_place: Применить
+          edit: Сохранить custom_link
+          edit_stay_in_place: Применить
+          new: Добавить custom_link
+          new_stay_in_place: Применить
+          update: Сохранить custom_link
+          update_stay_in_place: Применить
+      buttons:
+        add: Добавить дополнительную ссылку
+        remove: Удалить дополнительную ссылку
+    helps:
+      title_html: "Общие замечания по&nbsp;добавлению и&nbsp;редактированию информации:"
+      hint1_html: "Везде, где можно добавить ту&nbsp;или иную сущность (например, страницу), <b>в правой верхней части страницы есть кнопка «добавить»</b>."
+      hint2_html: "Некоторые типы записей могут быть <b>опубликованы</b> (и&nbsp;будут отображаться на&nbsp;сайте) и&nbsp;<b>заархивированы</b> (сохранятся в&nbsp;базе, их&nbsp;можно редактировать, но&nbsp;они не&nbsp;будут опубликованы на&nbsp;сайте). <b>Состояние опубликованной записи обозначается пиктограммой <i class='icon-eye-open'></i> в&nbsp;правой части списка</b> (отсутствие пиктограммы обозначает&nbsp;то, что запись заархивирована)."
+      hint3_html: "В&nbsp; некоторых списках есть возможность <b>ручной сортировки записей</b> (порядок отображения на&nbsp;сайте и&nbsp;в&nbsp;списках). Иногда требуется вывести какую-то запись раньше предыдущей. Это справедливо, например, для списка страниц. <b>Чтобы переместить запись выше или ниже, достаточно просто перетащить её&nbsp;в&nbsp;нужное место указателем мыши</b> (предварительно нажав левую кнопку мыши, когда указатель находится над пиктограммой <i class='icon-move'></i>)."
+      hint4_html: "В&nbsp; некоторых списках предусмотрены <b>групповые операции</b>&nbsp;— публикация, архивирование и&nbsp;удаление. Чтобы выполнить групповую операцию, необходимо выбрать записи, с&nbsp;которыми будет осуществляться операция&nbsp;— это можно сделать, отметив эти записи галочками в&nbsp;чекбоксах,&nbsp;— а&nbsp;затем выбрать операцию из&nbsp;списка внизу страницы (нажать на&nbsp;соответствующую кнопку). Эти операции можно выполнять также и&nbsp;с&nbsp;отдельными объектами (то&nbsp;есть по&nbsp;одному), чтобы не&nbsp;заходить на&nbsp;страницу редактирования записи."
+      hint5_html: "Если <b>редактирование записей</b> доступно, то&nbsp;в&nbsp;списке присутствует пиктограмма <i class='icon-edit'></i>. Щелчок по&nbsp;этой пиктограмме открывает страницу редактирования соответствующей записи."
+      hint6_html: "Все <b>специфичные настройки страниц</b> вынесены в раздел «#{link_to I18n.t('admin.settings.actions.index.header'), edit_admin_settings_path}»."
+      hint7_html: "В&nbsp;случаях, где это предусмотрено оформлением страниц, текстовые поля оснащены <b>WYSIWYG-редактором</b>. Редактор имеет возможность размещения изображений и&nbsp;вставки кода для видео (встроенное видео) с&nbsp;сервиса YouTube."
+      icons_meaning: Значение пиктограмм
+      actions:
+        index:
+          header: Панель управления
+          title: *layouts_admin_title
+          legend:
+            edit: Редактирование
+            delete: Удаление
+            move: Сортировка
+            published: Видимость на сайте
+            nav_published: Видимость в навигации
+    users:
+      actions:
+        index:
+          header: Пользователи
+          title: Пользователи
+      labels:
+        actions:
+          create: Добавить пользователя
+          edit: Сохранить пользователя
+          new: Добавить пользователя
+          update: Сохранить пользователя
+        form:
+          login: Войти
+          registration: Зарегистрироваться
+          forgot_password: Восстановить пароль
+          confirm: Я не получил инструкций о подтверждении аккаунта
+          oauth: Войти с помощью
+          remember_me: Запомнить меня
+          password: Пароль
+          password_confirmation: Подтверждение пароля
+          new_password: Новый пароль
+          new_password_confirmation: Подтверждение нового пароля
+        buttons:
+          password_reset: Выслать инструкции
+          password_edit: Изменить пароль
+          register: Зарегистрироваться
+    paper_trail/versions:
+      actions:
+        index:
+          header: Действия
+          title: Действия
+      labels:
+        actions:
+          show: Просмотр изменений
+          save_table: Сохранить таблицу
+        changes: Изменения
+        field: Поле
+        old_value: Старое значение
+        new_value: Новое значение
+    feedbacks:
+      actions:
+        index:
+          header: Обратная связь
+          title: Обратная связь
+      labels:
+        actions:
+          create: Добавить feedback
+          edit: Сохранить feedback
+          edit_stay_in_place: Сохранить feedback и редактировать
+          new: Добавить feedback
+          new_stay_in_place: Добавить feedback и редактировать
+          update: Сохранить feedback
+    profile:
+      actions:
+        index:
+          header: Мой профиль
+    settings:
+      actions:
+        index:
+          header: Настройки
+      sets:
+        counters: Счётчики
+        index: Главная страница
+        contact_information: Контактная информация
+      labels:
+        actions:
+          create: Настройки
+          edit: Сохранить настройки
+          update: Сохранить настройки
+        contact_email: E-mail
+    pages:
+      actions:
+        index:
+          header: Страницы
+          title: Страницы
+      alerts:
+        category:
+          Страница является категорией и не может быть отредактирована
+          в визуальном редакторе.
+        behavior_not_default:
+          Страница типа «%{behavior}» не может быть отредактирована
+          в визуальном редакторе.
+      labels:
+        actions:
+          create: Добавить страницу
+          create_stay_in_place: Применить
+          edit: Сохранить страницу
+          edit_stay_in_place: Применить
+          new: Добавить страницу
+          newrak_stay_in_place: Применить
+          update: Сохранить страницу
+          update_stay_in_place: Применить
+
+  pages:
+    behaviors:
+      pages: Типовая страница
+
+  unauthorized:
+    default: Необходимо войти или зарегистрироваться.
+  authentication:
+    two_factor: Двухфакторная аутентификация
+    key: Ключ
+    switch_on_2fa: Включить 2FA
+    switch_off_2fa: Выключить 2FA
