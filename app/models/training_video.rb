@@ -7,7 +7,7 @@ class TrainingVideo < ApplicationRecord
 
   flag_attrs :published
 
-  enumerize :training_type, in: %i[morning main default]
+  enumerize :training_type, in: %i[morning main default], default: :main
 
   scope :sorted, -> { order('created_at DESC') }
 

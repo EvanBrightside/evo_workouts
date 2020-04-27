@@ -9,7 +9,7 @@ class Week < ApplicationRecord
 
   validates :name, :number, presence: true
 
-  scope :sorted, -> { order('created_at DESC') }
+  scope :sorted, -> { order('created_at ASC') }
 
   has_many :days, dependent: :nullify
 

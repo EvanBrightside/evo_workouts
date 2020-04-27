@@ -25,18 +25,18 @@
             = link_to t('admin.days.actions.index.header'), admin_days_path, class: 'nav__link'
           = top_menu_item active: 'admin/training_videos#' do
             = link_to t('admin.training_videos.actions.index.header'), admin_training_videos_path, class: 'nav__link'
-          = top_menu_item active: 'admin/checklists#' do
-            = link_to t('admin.checklists.actions.index.header'), admin_checklists_path, class: 'nav__link'
-          = top_menu_item active: 'admin/measurements#' do
-            = link_to t('admin.measurements.actions.index.header'), admin_measurements_path, class: 'nav__link'
-          = top_menu_item active: 'admin/custom_links#' do
-            = link_to t('admin.custom_links.actions.index.header'), admin_custom_links_path, class: 'nav__link'
 
         - if current_user.has_role? :admin
           .nav__section
             .nav__group
               .nav__group-title.js-nav-group-toggle= t('labels.admin.other')
               .nav__group-content.nav__group-content--other
+                = top_menu_item active: 'admin/checklists#' do
+                  = link_to t('admin.checklists.actions.index.header'), admin_checklists_path, class: 'nav__link'
+                = top_menu_item active: 'admin/measurements#' do
+                  = link_to t('admin.measurements.actions.index.header'), admin_measurements_path, class: 'nav__link'
+                = top_menu_item active: 'admin/custom_links#' do
+                  = link_to t('admin.custom_links.actions.index.header'), admin_custom_links_path, class: 'nav__link'
                 / links
                 = top_menu_item active: 'admin/users#' do
                   = link_to t('admin.users.actions.index.header'), admin_users_path, class: 'nav__link'

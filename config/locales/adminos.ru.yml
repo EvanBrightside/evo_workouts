@@ -223,47 +223,47 @@ ru:
     weeks:
       actions:
         index:
-          header: Weeks
-          title: Weeks
+          header: Недели
+          title: Недели
       labels:
         actions:
-          create: Добавить week
+          create: Добавить неделю
           create_stay_in_place: Применить
-          edit: Сохранить week
+          edit: Сохранить неделю
           edit_stay_in_place: Применить
-          new: Добавить week
+          new: Добавить неделю
           new_stay_in_place: Применить
-          update: Сохранить week
+          update: Сохранить неделю
           update_stay_in_place: Применить
     days:
       actions:
         index:
-          header: Days
-          title: Days
+          header: Дни
+          title: Дни
       labels:
         actions:
-          create: Добавить day
+          create: Добавить день
           create_stay_in_place: Применить
-          edit: Сохранить day
+          edit: Сохранить день
           edit_stay_in_place: Применить
-          new: Добавить day
+          new: Добавить день
           new_stay_in_place: Применить
-          update: Сохранить day
+          update: Сохранить день
           update_stay_in_place: Применить
     training_videos:
       actions:
         index:
-          header: Training_videos
-          title: Training_videos
+          header: Тренировки
+          title: Тренировки
       labels:
         actions:
-          create: Добавить training_video
+          create: Добавить тренировку
           create_stay_in_place: Применить
-          edit: Сохранить training_video
+          edit: Сохранить тренировку
           edit_stay_in_place: Применить
-          new: Добавить training_video
+          new: Добавить тренировку
           new_stay_in_place: Применить
-          update: Сохранить training_video
+          update: Сохранить тренировку
           update_stay_in_place: Применить
       buttons:
         add: Добавить тренировку
@@ -271,17 +271,17 @@ ru:
     checklists:
       actions:
         index:
-          header: Checklists
-          title: Checklists
+          header: Чек листы
+          title: Чек листы
       labels:
         actions:
-          create: Добавить checklist
+          create: Добавить чек лист
           create_stay_in_place: Применить
-          edit: Сохранить checklist
+          edit: Сохранить чек лист
           edit_stay_in_place: Применить
-          new: Добавить checklist
+          new: Добавить чек лист
           new_stay_in_place: Применить
-          update: Сохранить checklist
+          update: Сохранить чек лист
           update_stay_in_place: Применить
       buttons:
         add: Добавить чекпоинт
@@ -289,17 +289,17 @@ ru:
     measurements:
       actions:
         index:
-          header: Measurements
-          title: Measurements
+          header: Замеры
+          title: Замеры
       labels:
         actions:
-          create: Добавить measurement
+          create: Добавить замер
           create_stay_in_place: Применить
-          edit: Сохранить measurement
+          edit: Сохранить замер
           edit_stay_in_place: Применить
-          new: Добавить measurement
+          new: Добавить замер
           new_stay_in_place: Применить
-          update: Сохранить measurement
+          update: Сохранить замер
           update_stay_in_place: Применить
       buttons:
         add: Добавить измерение
@@ -307,17 +307,17 @@ ru:
     custom_links:
       actions:
         index:
-          header: Custom_links
-          title: Custom_links
+          header: Дополнительные ссылки
+          title: Дополнительные ссылки
       labels:
         actions:
-          create: Добавить custom_link
+          create: Добавить дополнительную ссылку
           create_stay_in_place: Применить
-          edit: Сохранить custom_link
+          edit: Сохранить дополнительную ссылку
           edit_stay_in_place: Применить
-          new: Добавить custom_link
+          new: Добавить дополнительную ссылку
           new_stay_in_place: Применить
-          update: Сохранить custom_link
+          update: Сохранить дополнительную ссылку
           update_stay_in_place: Применить
       buttons:
         add: Добавить дополнительную ссылку

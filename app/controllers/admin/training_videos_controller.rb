@@ -5,8 +5,7 @@ class Admin::TrainingVideosController < Admin::BaseController
            collection_scope: [:sorted],
            location: proc { params[:stay_in_place] ?
                            edit_polymorphic_path([:admin, resource]) :
-                           polymorphic_path([:admin, resource.class]) },
-           finder: :find_by_slug!)
+                           polymorphic_path([:admin, resource.class]) })
 
   private
 
