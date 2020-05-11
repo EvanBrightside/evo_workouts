@@ -1,0 +1,14 @@
+.modal-header
+  h5.modal-title
+    = 'Описание видео'
+
+  button.close[type="button" data-dismiss="modal" aria-label="Close"]
+    span[aria-hidden="true"]
+      | ×
+
+.modal-body
+  == @training.description.body
+
+.modal-footer
+  button.btn.btn-secondary[type="button" data-dismiss="modal"]
+    | Закрыть

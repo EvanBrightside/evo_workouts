@@ -1,12 +1,18 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-
+  layout :layout_by_resource
   respond_to :html
 
   before_action :reload_routes, :set_locale, :set_paper_trail_whodunnit
 
   @@routes_version = 0
   @@lock = Mutex.new
+
+  def respond_modal_with(*args, &blk)
+    options = args.extract_options!
+    options[:responder] = ModalResponder
+    respond_with *args, options, &blk
+  end
 
   protected
 
@@ -58,5 +64,16 @@ class ApplicationController < ActionController::Base
 
   def set_pages
     @pages ||= Page.navigation.sorted
+  end
+
+  private
+
+  def layout_by_resource
+    # binding.pry
+    if devise_controller? && resource_name == :user
+      "admin"
+    else
+      "application"
+    end
   end
 end

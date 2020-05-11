@@ -1,0 +1,39 @@
+- collection_title
+= collection_header
+
+- if collection.present?
+  - pagination = capture do
+    = paginate collection, theme: :admin
+
+  - list = capture do
+    = pagination
+    .table-list
+      table.table.table-hover.table-sm
+        thead
+          tr
+            th= admin_sortable_column :email, resource_class.human_attribute_name(:email)
+            th
+            th
+            th
+            th
+            th
+            th
+            th
+        tbody
+          - collection.each do |object|
+            tr
+              td= link_to object.email, polymorphic_path([:admin, object], action: :edit)
+              td= object.sign_in_count
+              td= object.current_sign_in_at
+              td= object.last_sign_in_at
+              td= object.current_sign_in_ip
+              td= object.last_sign_in_ip
+              td.table-list__controls= object_link_edit(object)
+              td.table-list__check= admin_cb(object)
+    = pagination
+
+  - if controller.respond_to?(:batch_action)
+    = batch_actions_tag do
+      = list
+  - else
+    = list

@@ -1,4 +1,6 @@
 class Day < ApplicationRecord
+  DAYNAMES = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+
   include Adminos::FlagAttrs
   include Adminos::NestedSet::Duplication
 

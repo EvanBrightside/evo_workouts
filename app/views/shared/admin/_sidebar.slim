@@ -40,6 +40,8 @@
                 / links
                 = top_menu_item active: 'admin/users#' do
                   = link_to t('admin.users.actions.index.header'), admin_users_path, class: 'nav__link'
+                = top_menu_item active: 'admin/customers#' do
+                  = link_to t('admin.customers.actions.index.header'), admin_customers_path, class: 'nav__link'
 
     .sidebar__footer
       .nav

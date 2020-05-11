@@ -1,0 +1,25 @@
+.limiter
+  .container-login100
+    .wrap-login100.p-t-85.p-b-20
+      .login100-form.validate-form
+        span.login100-form-title.p-b-30
+          |  Welcome
+        = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .form-inputs
+            .wrap-input100.m-t-35.m-b-35
+              = f.input :email,
+                        label: false,
+                        required: false,
+                        autofocus: true,
+                        placeholder: 'Email',
+                        input_html: { autocomplete: "email", class: 'input100' }
+            .wrap-input100.m-b-50
+              = f.input :password,
+                        label: false,
+                        required: false,
+                        placeholder: 'Password',
+                        input_html: { autocomplete: "current-password", class: 'input100' }
+
+            = f.input :remember_me, label: false, input_html: {checked: "checked"}, as: :hidden if devise_mapping.rememberable?
+          .form-actions
+            = f.button :submit, "Log in", class: 'button login100-form-btn'

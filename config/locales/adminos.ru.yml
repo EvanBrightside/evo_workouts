@@ -345,6 +345,32 @@ ru:
     users:
       actions:
         index:
+          header: Администраторы
+          title: Администраторы
+      labels:
+        actions:
+          create: Добавить администратора
+          edit: Сохранить администратора
+          new: Добавить администратора
+          update: Сохранить администратора
+        form:
+          login: Войти
+          registration: Зарегистрироваться
+          forgot_password: Восстановить пароль
+          confirm: Я не получил инструкций о подтверждении аккаунта
+          oauth: Войти с помощью
+          remember_me: Запомнить меня
+          password: Пароль
+          password_confirmation: Подтверждение пароля
+          new_password: Новый пароль
+          new_password_confirmation: Подтверждение нового пароля
+        buttons:
+          password_reset: Выслать инструкции
+          password_edit: Изменить пароль
+          register: Зарегистрироваться
+    customers:
+      actions:
+        index:
           header: Пользователи
           title: Пользователи
       labels:

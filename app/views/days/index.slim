@@ -1,0 +1,57 @@
+.container-sm.m-t-35
+  = form_tag(nil, method: :get) do
+    .form-row
+      .form-group.col
+        = select_tag 'week', options_from_collection_for_select(@weeks, :id, :name, params[:week_id]), class: 'select2it'
+
+      .form-group.col
+        = select_tag 'day', options_for_select(@days, params[:day_id]), class: 'select2it'
+
+      .form-group.col
+        = submit_tag 'Показать', class: 'btn btn-success'
+
+  - unless @current_day.nil?
+    - unless @current_day.training_videos.empty?
+      - @current_day.training_videos.sort.map do |el|
+        p= el.training_type.text
+        .m-t-15
+        p= link_to("#{el.link}", el.link, target: :blank)
+        .m-t-15
+
+        div= link_to 'Описание тренировки', training_description_days_path,
+                  class: 'btn btn-success',
+                  data: { modal: true, modal_params: {training: el} }
+
+        #modal-holder
+        .m-t-15
+
+    == @current_day.content.body
+
+    - unless @current_day.checklist_name.nil?
+      .m-t-15
+      p= @current_day.checklist_name
+      .m-t-15
+      == @current_day.checklist_description.body
+      .m-t-15
+      - @current_day.checklists.map do |x|
+        == x.check_point.body
+      .m-t-15
+
+    - unless @current_day.measurement_name.nil?
+      .m-t-15
+      p= @current_day.measurement_name
+      .m-t-15
+      == @current_day.measurement_description.body
+      .m-t-15
+      - @current_day.measurements.map do |x|
+        p= x.name
+      .m-t-15
+
+    - unless @current_day.custom_links.empty?
+      .m-t-15
+      - @current_day.custom_links.map do |x|
+        p= x.name
+        p= link_to("#{x.link}", x.link, target: :blank)
+    .m-b-25
+
+/= link_to 'log_out', destroy_customer_session_path, method: :delete
