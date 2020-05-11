@@ -2,7 +2,7 @@
   "name": "evo",
   "private": true,
   "engines": {
-    "node": "12.13.x"
+    "node": "12.x.x"
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
