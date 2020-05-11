@@ -39,4 +39,5 @@ yarn-debug.log*
 /tmp
 /db/*.sql.bz2
 .env
+.DS_Store
 spec/examples.txt
