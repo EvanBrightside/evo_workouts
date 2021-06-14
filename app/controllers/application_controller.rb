@@ -69,7 +69,6 @@ class ApplicationController < ActionController::Base
   private
 
   def layout_by_resource
-    # binding.pry
     if devise_controller? && resource_name == :user
       "admin"
     else

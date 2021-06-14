@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '3.0.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
@@ -56,8 +56,8 @@ group :development do
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-puma'
   gem 'capistrano-systemd-multiservice', '~> 0.1.0.beta6', require: false
-  gem 'guard'
-  gem 'guard-livereload', '~> 2.5', require: false
+  # gem 'guard'
+  # gem 'guard-livereload', require: false
   gem 'foreman'
 end
 
@@ -76,6 +76,7 @@ gem 'whenever', require: false
 gem 'capistrano-db-tasks', require: false
 gem 'sanitize'
 gem 'mini_magick'
+gem 'mimemagic'
 gem 'paper_trail'
 gem 'postal-rails', '~> 1.0'
 gem 'scoped_search'

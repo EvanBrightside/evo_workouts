@@ -3,8 +3,8 @@ class DaysController < ApplicationController
   respond_to :html, :json
 
   def index
-    params['week'] ||= Week.first.id
-    params['day'] ||= Day.first.id
+    params['week'] ||= Week.first&.id
+    params['day'] ||= Day.first&.id
     @weeks = Week.all
     @days = Day::DAYNAMES.map.with_index(1) { |a, i| [a, i]}
     @current_day = Day.find_by(week_id: params['week'], number: params['day'])

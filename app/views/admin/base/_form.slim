@@ -3,15 +3,13 @@
   - breadcrumbs label: resource.parent.name,
       url: polymorphic_path([:edit, :admin, resource.parent])
 - breadcrumbs resource_name
-- breadcrumbs label: collection_name, url: admin_index_path(resource.class)
+- breadcrumbs label: collection_name, url: polymorphic_path([:admin, resource.class])
 
 = resource_header
 
 = adminos_form_for resource_form_object, wrapper: :admin do |f|
   .f
     .f__wrapper
-      / Родительский элемент
-      / Это лажа, но пока пусть будет так...
       - max_depth = f.object.class.const_get('MAX_DEPTH') rescue 0
       - if f.object.respond_to?(:parent) && max_depth > 1
         - f.object.parent_id = params[:parent_id] if action_name == 'new'

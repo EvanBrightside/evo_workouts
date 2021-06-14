@@ -1,46 +1,15 @@
-# README
+# Workouts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+* git clone `git@github.com:EvanBrightside/evo_workouts.git`
+* bundle install
+* cp config/database.yml.example config/database.yml
+* rails db:setup
+* rails db:migrate
+* rails s
 
-* Ruby version
+## Tech
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-## Deployment
-
-For painless deployment, you should configure several sudo commands for specified deploy user
-to be executed without asking for password via `sudo visudo` command,
-as described in https://capistranorb.com/documentation/getting-started/authentication-and-authorisation/#authorisation
-
-Full list of sudo command could be obtained by running commands mentioned below with `--dry-run` option
-(e. g. `bin/cap --dry-run {stage_name} deploy:setup`
-
-1. Set up new deployment in `config/stages/{stage_name}.rb` file
-1. Set up new deployment (upload configurations):
-
-    `bin/cap {stage_name} deploy:setup`
-
-1. Deploy new version to `{stage_name}`:
-
-    `bin/cap {stage_name} deploy`
-
-2. On new deployment (or when systemd templates updated), update & enable systemd services for Puma & Sidekiq:
-
-    `bin/cap {stage_name} deploy:setup_systemd`
+* Ruby on Rails 6.0.3.7
+* Ruby 3.0.1
